@@ -41,9 +41,39 @@
 
 ## NFV简介
 
-网络功能虚拟化（NFV）通过使用通用性硬件以及虚拟化技术来承载很多功能的软件处理，从而降低网络昂贵的设备成本。可以通过软硬件解耦及功能抽象，使网络设备功能不再依赖于专用硬件，资源可以充分灵活共享，实现新业务的快速开发和部署，并基于实际业务需求进行自动部署、弹性伸缩、故障隔离和自愈等。
+NFV（Network Function Virtualization，网络功能虚拟化）通过使用通用性硬件以及虚拟化技术来承载很多功能的软件处理，从而降低网络昂贵的设备成本。可以通过软硬件解耦及功能抽象，使网络设备功能不再依赖于专用硬件，资源可以充分灵活共享，实现新业务的快速开发和部署，并基于实际业务需求进行自动部署、弹性伸缩、故障隔离和自愈等。
 
-NFV端到端虚拟化架构中，从功能上来划分，可以分为3种类型的模块：MANO（Management and Orchestration）管理与协同相关模块、VNF虚拟化的网络实体、网络虚拟化功能基础设施层。
+NFV端到端虚拟化架构中，从功能上来划分，可以分为3种类型的模块：
 
-![](https://github.com/niwanli/reading-notes/raw/master/5G/pictures/NFV.png "NFV端到端虚拟化架构")
+* MANO（Management and Orchestration，管理与编排相关模块）
+* VNF（Virtualised Network Function，虚拟化的网络实体）
+* NFVI（Network Functions Virtualization Infrastructure，网络功能虚拟化基础设施层）
 
+![](https://github.com/niwanli/reading-notes/raw/master/5G/pictures/NFV.png "")
+
+图-1 NFV端到端虚拟化架构
+
+### 1.MANO管理与协同编排模块
+
+虚拟化实现了底层物理设备与上层操作系统和应用软件的解耦，而管理与协同则要提供一个可管、可控、可运营的服务提供环境，使得基础资源可以便捷地提供给应用，其本质是实现部署、调度、运维、管理。虚拟化架构按照网络、网元、资源划分为3层，每层均存在管理和协同功能模块。管理与协同层的功能应包括虚拟机生命周期管理、资源监控、虚拟机性能监控、故障管理、虚拟机动态迁移、负载均衡、资源管理、信息维护等。
+
+管理与协同层主要包括：
+
+* OSS（Operation Support System，运营支撑系统）
+* EMS（Element Management System，网元管理系统）
+* NFVO（Network Function Virtual Orchestrator，网络功能虚拟化编排器）
+* VNFM（Virtual Network Function Management，虚拟化网络功能管理器）
+* VIM（Virtual Infrastructure Management，虚拟化基础设施管理器）
+
+其中，NFVO实现统一的资源管理与调度；VNFM实现虚拟化网元生命周期管理，包括虚拟网元的生成、变更、删除等；VIM实现实现对虚拟化资源、硬件资源池的统一管理。
+
+### 2.VNF虚拟化的网络实体
+
+对于移动网络来说，网元层的VNF是软化后的网元，部署在VM上，执行3GPP定义的网元功能，功能与接口和非虚拟化时保持一致。网元层的主要功能模块包括：
+
+* OMU（Operation and Management Unit，操作与管理单元）
+* VNSF(Virtual Network Sub-functions，虚拟化网络子帧）
+
+### 3.NFVI网络功能虚拟化基础设施层
+
+NFVI主要包括**物理硬件层**和**虚拟化层**。物理硬件层包括计算、存储、网络三部分的设备。虚拟化层主要是指虚拟机超级管理员（Hypervisor），Hypervisor是每个服务器上的虚拟计算、虚拟存储和虚拟网络能力的直接提供者。
