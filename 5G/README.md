@@ -131,3 +131,9 @@ SDN（Software Defined Network，软件定义网络）是一种新兴的控制�
 ![](https://github.com/niwanli/reading-notes/raw/master/5G/pictures/NFV_and_SDN_in_5G.png "")
 
 图-5 NFV/SDN架构下的移动核心网
+
+## 小结
+
+* 网络功能虚拟化（NFV）实现对底层资源的统一“池化管理”，是网络资源管理的核心技术。
+* 软件定义网络（SDN）是一种将控制平面和数据平面相分离的网络架构。
+
