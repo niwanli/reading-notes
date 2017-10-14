@@ -34,7 +34,7 @@ Cloud (marked as “1” ). The role of VRs is responsible for the execution of 
 
 > 未卸载的子任务（标记为“0”），卸载到Edge Cloud的子任务（标记为“1”）。 VR的角色是负责执行标记为“1”的子任务（微进程？tasklet）。
 
-![](https://github.com/niwanli/reading-notes/raw/master/"Mobile Edge Computing"/pictures/fig-1.gif "MVR system model")
+![](https://github.com/niwanli/reading-notes/raw/master/MobileEdgeComputing"/pictures/fig-1.gif "MVR system model")
 
 Fig-1 MVR system model
 
@@ -43,23 +43,23 @@ Fig-1 MVR system model
 5. On the Mobile Device, the MVR runtime consists of four
 components:
 
-* Proxy Monitor: discovers resourceful proxy
-* Decision Engine
-	* Decision Engine: identifies methods
-	* Dynamic Analyzer: analyzes the cost and benefit  
-* Tasklet Distributor: marks the tasklet as “0” or “1”
-* Executor: executes the procedure and interacts with Edge Cloud
+* **Proxy Monitor**: discovers resourceful proxy
+* **Decision Engine**
+	* **Decision Engine**: identifies methods
+	* **Dynamic Analyzer**: analyzes the cost and benefit  
+* **Tasklet Distributor**: marks the tasklet as “0” or “1”
+* **Executor**: executes the procedure and interacts with Edge Cloud
 
 6. On the other side, each VRs in Edge Cloud have six main components:
 
-* Registration Manager: responsible for the registering and authenticating of the mobile devices that are requesting services
-* Predictor: predicts the arrival of the mobile user and execution time of tasklet
-* Partition Analyzer: analyzes the current network conditions of Edge Cloud and construct offloading overhead function
-* Decision Solver: provides a decision method
-* Virtual Resource Controller: VRs is managed by a certain VRs Controller (VRC) and VRC need to aggregate the execution results and feed back to the mobile device
-* Executor: executes the procedure and fulfill interaction during execution
+* **Registration Manager**: responsible for the registering and authenticating of the mobile devices that are requesting services
+* **Predictor**: predicts the arrival of the mobile user and execution time of tasklet
+* **Partition Analyzer**: analyzes the current network conditions of Edge Cloud and construct offloading overhead function
+* **Decision Solver**: provides a decision method
+* **Virtual Resource Controller**: VRs is managed by a certain VRs Controller (VRC) and VRC need to aggregate the execution results and feed back to the mobile device
+* **Executor**: executes the procedure and fulfill interaction during execution
 
-![](https://github.com/niwanli/reading-notes/raw/master/Mobile Edge Computing/pictures/fig-2.gif "The MVR architecture of the prototype")
+![](https://github.com/niwanli/reading-notes/raw/master/MobileEdgeComputing/pictures/fig-2.gif "The MVR architecture of the prototype")
 
 Fig-2 The MVR architecture of the prototype
 
@@ -77,7 +77,7 @@ Fig-2 The MVR architecture of the prototype
 
 > 在这个AR示例中，视频源和渲染器这两个子任务必须在移动设备上执行，因为它们需要访问设备特定的硬件。因此，它们将被标记为“0”。
 
-![](https://github.com/niwanli/reading-notes/raw/master/Mobile Edge Computing/pictures/fig-3.gif "The relation of the AR algorithm tasklets")
+![](https://github.com/niwanli/reading-notes/raw/master/MobileEdgeComputing/pictures/fig-3.gif "The relation of the AR algorithm tasklets")
 
 Fig-3 The relation of the AR algorithm tasklets
 
@@ -102,11 +102,11 @@ Fig-3 The relation of the AR algorithm tasklets
 
 > Femtocloud系统为一组移动设备提供动态，自配置和多设备移动云。
 
-15. **Spontaneous** proximity cloud (SPC) drops the high delay between the mobile device and the cloud by a set of neighboring mobile devices in a collaborative manner.
+15. **Spontaneous proximity cloud** (SPC) drops the high delay between the mobile device and the cloud by a set of neighboring mobile devices in a collaborative manner.
 
 > 自发接近云（SPC）以协作的方式通过一组相邻的移动设备降低移动设备和云之间的高延迟。
 
-![](https://github.com/niwanli/reading-notes/raw/master/Mobile Edge Computing/pictures/fig-4.gif "The application model of computation offloading")
+![](https://github.com/niwanli/reading-notes/raw/master/MobileEdgeComputing/pictures/fig-4.gif "The application model of computation offloading")
 
 Fig-4 The application model of computation offloading
 
