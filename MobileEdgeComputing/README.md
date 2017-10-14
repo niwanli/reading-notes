@@ -34,7 +34,7 @@ Cloud (marked as “1” ). The role of VRs is responsible for the execution of 
 
 > 未卸载的子任务（标记为“0”），卸载到Edge Cloud的子任务（标记为“1”）。 VR的角色是负责执行标记为“1”的子任务（微进程？tasklet）。
 
-![](https://github.com/niwanli/reading-notes/raw/master/MobileEdgeComputing"/pictures/fig-1.gif "MVR system model")
+![](https://github.com/niwanli/reading-notes/raw/master/MobileEdgeComputing/pictures/fig-1.gif "MVR system model")
 
 Fig-1 MVR system model
 
