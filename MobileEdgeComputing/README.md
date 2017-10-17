@@ -183,3 +183,7 @@ Cisco的一份报告显示，数据流量快速增涨，物联网连接的设备
 * Cloudlet
 * Femtocloud system 
 * Spontaneous Proximity Cloud
+
+### 4. Conclusion
+
+在本篇论文中，提出的MVR架构具有的作用。目前还有那些带有挑战性的工作，预想的一些解决方法。预测在某种情况下，计算迁移复杂度的变化趋势。未来还将继续深入研究。
